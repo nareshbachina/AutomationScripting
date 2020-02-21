@@ -1,14 +1,16 @@
 node {
-   stage('Install Python Dependencies') {
-      sh '''
-        cd AWS/RANDOM
-        pip install -r requirements.txt 
-      '''
-   }
-   stage('Run Python Script') {
+  
+   stage('Install python dependencies') {
        sh '''
-        cd AWS/RANDOM
-        python Create_Image.py --instance_name="$INSTANCE_NAME"
+         cd AutomationScripts-master/AWS/RANDOM
+         pip install -r requirements.txt
        '''
    }
+   stage('Run Python Scripts') {
+       sh '''
+       cd AutomationScripts-master/AWS/RANDOM
+       python Create_Image.py --instance_name="$INSTANCE_NAME"
+      '''
+   }
 }
+
