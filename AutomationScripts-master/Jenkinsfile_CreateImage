@@ -10,7 +10,7 @@ node {
        sh '''
        cd AutomationScripts-master/AWS/RANDOM
        python Create_Image.py --instance_name="$INSTANCE_NAME"
-       emailext body: 'Build Complete', recipientProviders: [developers()], subject: 'Jenkins build', to: 'bachina.devops@gmail.com'
+       
       '''
    }
 }
