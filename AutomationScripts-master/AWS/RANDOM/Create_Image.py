@@ -5,7 +5,7 @@ from boto import ec2
 
 AWS_ACCESS_KEY_ID=""
 AWS_SECRET_ACCESS_KEY=""
-region="ap-south-1"
+region="us-east-1"
 import time
 import datetime
 
