@@ -1,0 +1,10 @@
+
+# .bash_profile
+
+# user specific environment and startup programs
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+M2_HOME=/root/maven/apache-maven-3.6.3
+M2=$M2_HOME/bin
+PATH=$PATH:$JAVA_HOME:$M2_HOME:$M2:$HOME/bin
+
+export PATH
